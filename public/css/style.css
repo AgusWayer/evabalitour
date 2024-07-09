@@ -1,0 +1,14 @@
+.btn-orange{
+    
+}
+@media screen and (min-width: 768px) {
+    .offcanvas-body {
+        width: 100%;
+    }
+    .menu-container {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
