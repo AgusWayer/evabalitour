@@ -23,17 +23,35 @@
 .floating-input .form {
     position: absolute;
     background-color: white;
-    bottom: -3rem;
+    top: -4em;
     border-radius: 10px;
+    padding: 0 0 0 10px;
+    filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.3));
+}
+.icon-container {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ff7f3e;
 }
 .book-btn {
     border: 0;
+    outline: 0;
     background-color: #ff7f3e;
     width: 100%;
     height: 100%;
     color: white;
     padding: 3rem 0;
     border-radius: 5rem 0 0 5rem;
+    transition: 0.3s;
+}
+.book-btn:hover {
+    background-color: white;
+    color: #ff7f3e;
+    outline: 1px solid #ff7f3e;
 }
 .floating-input .form {
     overflow: hidden;
