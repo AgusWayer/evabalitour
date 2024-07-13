@@ -118,20 +118,62 @@
     {{-- about end --}}
 
     {{-- destination --}}
-    <div class="container destination ">
-        <div class="swiper">
+    <div class="container destination py-4 text-white text-center text-md-start">
+        <div class="swiper destinations rounded-3">
             <div class="swiper-wrapper">
+                @for ($i = 1; $i < 3; $i++)
                 <section class="swiper-slide">
-                    <div class="h-100"></div>
+                    <div class="position-relative d-flex justify-content-center h-100">
+                        <img src="{{asset('img/dest-'.$i.'.jpg')}}" class="w-100 h-100" alt="">
+                        <section class="content position-absolute d-flex justify-content-center flex-column">
+                            <h5 class="fs-1 fw-semibold">Uluwatu</h5>
+                            <h5 class="fw-semibold">Balinese Performing Arts</h5>
+                            <p>Uluwatu Temple  is  well known as a name of Hinduism temple which is located on southern part of Bali. Ulu Meaning land’s and watu meaning rock.  This name truly presents this temple as it is found at Bali’s.</p>
+                            <div>
+                                <a href="" class="btn  btn-orange">See More</a>
+                            </div>
+                        </section>
+                        <div class="overlay"></div>
+                    </div>
                 </section>
-                <section class="swiper-slide">
-                    slide 2
-                </section>
-                <section class="swiper-slide">
-                    slide 3
-                </section>
+                @endfor
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </div>
     {{-- destination end --}}
+
+    {{-- package --}}
+    <div class="container packages position-relative">
+        <h1 class="text-center fw-semibold text-orange">Tour Packages</h1>
+        <p class="text-center"> Let us be your gateway to unforgettable adventures.</p>
+        <div class="package swiper">
+            <div class="swiper-wrapper">
+                @for ($i = 1;$i < 3;$i++)
+                <section class="swiper-slide">
+                    <div class="card">
+                        <img src="{{asset('img/dest-'.$i.'.jpg')}}" class="card-img-top" alt="">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h4 class="fs-5 fw-semibold text-orange">Scooter Transport Tour</h4>
+                            <div>
+                                <p class="m-0" style="font-size: 12px">Start From</p>
+                                <div class="d-flex align-items-end justify-content-between">
+                                    <h1 class="fs-4 fw-semibold text-blue">450k</h1>
+                                    <a href="" class="btn btn-orange book-package">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                @endfor
+            </div>
+        </div>
+        <div class="my-3 text-center">
+            <a href="" class="btn btn-blue ">See More</a>
+        </div>
+        <img src="{{asset('img/parallax-top.png')}}" class="w-100 parallax-top" alt="">
+    </div>
+    {{-- package end--}}
+
 @endsection
