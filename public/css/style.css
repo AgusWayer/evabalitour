@@ -3,6 +3,9 @@
 * {
     font-family: "Poppins", "sans-serif";
 }
+.navbar {
+    z-index: 9;
+}
 .btn-orange {
     background-color: #ff7f3e;
     color: white;
@@ -18,15 +21,18 @@
     object-fit: cover;
 }
 .header-hero {
+    font-size: 2.5rem;
     font-weight: 700;
 }
 .floating-input .form {
     position: absolute;
     background-color: white;
-    top: -4em;
+    top: -10em;
     border-radius: 10px;
-    padding: 0 0 0 10px;
     filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.3));
+    width: 80%;
+    overflow: hidden;
+    padding: 1rem 0 0 0;
 }
 .icon-container {
     width: 70px;
@@ -34,18 +40,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     background-color: #ff7f3e;
 }
 .book-btn {
     border: 0;
     outline: 0;
+    margin-top: 1rem;
     background-color: #ff7f3e;
     width: 100%;
+    padding: 1rem;
     height: 100%;
     color: white;
-    padding: 3rem 0;
-    border-radius: 5rem 0 0 5rem;
     transition: 0.3s;
 }
 .book-btn:hover {
@@ -53,9 +58,20 @@
     color: #ff7f3e;
     outline: 1px solid #ff7f3e;
 }
-.floating-input .form {
-    overflow: hidden;
+
+/* value */
+.value {
+    align-items: end;
+    height: 180vh;
+    padding-bottom: 2rem;
 }
+.value .col-md-3 {
+    margin-bottom: 1rem;
+}
+/* value end */
+/* about */
+
+/* about end */
 @media screen and (min-width: 768px) {
     .offcanvas-body {
         width: 100%;
@@ -68,4 +84,22 @@
     .header-hero {
         font-size: 6rem;
     }
+    .book-btn {
+        padding: 3rem 0;
+        margin-top: 0;
+        border-radius: 5rem 0 0 5rem;
+    }
+    .floating-input .form {
+        padding: 0;
+        width: 100%;
+        top: -4em;
+        margin: 0 !important;
+    }
+    /* value */
+    .value {
+        align-items: center;
+        height: 80vh;
+        padding-bottom: 0;
+    }
+    /* value end */
 }
