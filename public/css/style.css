@@ -7,28 +7,42 @@
 }
 .navbar {
     z-index: 9;
+    background-color: transparent;
+    transition: 0.3s;
 }
+.navbar a {
+    color: white;
+}
+/* navbar */
+.navbar.active {
+    background-color: white;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+}
+.navbar.active a {
+    color: #414141;
+}
+/* navbar end */
 .btn-orange {
     background-color: #ff7f3e;
-    color: white;
+    color: white !important;
 }
 .btn-blue {
     background-color: #006989;
-    color: white;
+    color: white !important;
 }
 .btn-orange:hover {
     outline: 1px solid #ff7f3e;
-    color: #ff7f3e;
+    color: #ff7f3e !important;
 }
 .btn-blue:hover {
     outline: 1px solid #006989;
-    color: #006989;
+    color: #006989 !important;
 }
 .bg-orange-light {
     background-color: #ffd9c6;
 }
 .text-orange {
-    color: #ff7f3e;
+    color: #ff7f3e !important;
 }
 .text-blue {
     color: #006989;

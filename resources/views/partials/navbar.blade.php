@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md bg-transparent position-fixed w-100 ">
+<nav class="navbar navbar-expand-md position-fixed w-100 ">
     <div class=" offcanvas offcanvas-start" id="navbar">
         <div class="offcanvas-header">
             <a href="" class="navbar-brand">Eva Bali Tours</a>
