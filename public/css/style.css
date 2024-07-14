@@ -24,6 +24,9 @@
     outline: 1px solid #006989;
     color: #006989;
 }
+.bg-orange-light {
+    background-color: #ffd9c6;
+}
 .text-orange {
     color: #ff7f3e;
 }
@@ -128,12 +131,72 @@
     font-size: 12px;
 }
 /* package end */
-
-.parallax-top {
-    height: 7rem;
-    object-fit: cover;
-    object-position: bottom;
+/* parallax */
+.parallax-container {
+    height: 90vh;
+    overflow-y: hidden;
 }
+.parallax {
+    margin-top: -10rem;
+    z-index: -1;
+    object-fit: cover;
+}
+.parallax-top {
+    z-index: 1;
+}
+.parallax-bot {
+    z-index: 2;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+.parallax-container .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.2)
+    );
+    z-index: 0;
+}
+.parallax-container .content {
+    position: absolute;
+    top: 0;
+    z-index: 9;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+.parallax-title {
+    font-size: 2rem;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    -webkit-text-fill-color: transparent;
+}
+.fs-12 {
+    font-size: 12px;
+}
+/* parallax end */
+/* gallery */
+.gallery-container {
+    height: 60vh;
+}
+.gallery {
+    height: 70%;
+}
+/* gallery end */
+
+/* article */
+.img-article {
+    height: 15rem;
+    object-fit: cover;
+}
+/* article end */
 @media screen and (min-width: 768px) {
     .offcanvas-body {
         width: 100%;
@@ -171,5 +234,37 @@
     .book-package {
         font-size: 16px;
     }
+
     /* package end */
+    /* parallax */
+    .parallax {
+        margin-top: -15rem;
+    }
+    .parallax-container {
+        height: 150vh;
+    }
+    .parallax-title {
+        font-size: 4rem;
+    }
+    .fs-12 {
+        font-size: 16px;
+    }
+    .parallax-container .overlay {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0)
+        );
+    }
+    /* parallax end */
+}
+@media screen and (min-width: 1024px) {
+    .parallax {
+        margin-top: -18rem;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .parallax {
+        margin-top: -25rem;
+    }
 }

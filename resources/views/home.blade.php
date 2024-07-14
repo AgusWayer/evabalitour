@@ -46,35 +46,35 @@
         <section class="container value text-center d-flex ">
             <div>
                 <h5 class="text-orange  fs-2 fw-semibold">Top Values For You</h5>
-                <p class="mb-3">Try Variety of Benefits when using our services</p>
+                <p class="mb-3 text-secondary">Try Variety of Benefits when using our services</p>
                 <div class="row mt-5">
                     <section class="col-md-3 ">
                         <div class="icon-container fs-2 rounded-circle mx-auto text-white m-0 p-0">
                             <i class="fa-regular fa-paper-plane"></i>
                         </div>
                         <h5 class="fw-bold text-orange my-2">Airport Pickup</h5>
-                        <small>Enjoy seamless and stress- transportation with our airport pickup service.</small>
+                        <small class="text-secondary">Enjoy seamless and stress- transportation with our airport pickup service.</small>
                     </section>
                     <section class="col-md-3 ">
                         <div class="icon-container fs-2 rounded-circle mx-auto text-white m-0 p-0">
                             <i class="fa-regular fa-calendar-check"></i>
                         </div>
                         <h5 class="fw-bold text-orange my-2">Easy Booking </h5>
-                        <small>Enjoy seamless and stress- transportation with our airport pickup service.</small>
+                        <small class="text-secondary">Enjoy seamless and stress- transportation with our airport pickup service.</small>
                     </section>
                     <section class="col-md-3 ">
                         <div class="icon-container fs-2 rounded-circle mx-auto text-white m-0 p-0">
                             <i class="fa-solid fa-star"></i>
                         </div>
                         <h5 class="fw-bold text-orange my-2">Best Tour Guide</h5>
-                        <small>Enjoy seamless and stress- transportation with our airport pickup service.</small>
+                        <small class="text-secondary">Enjoy seamless and stress- transportation with our airport pickup service.</small>
                     </section>
                     <section class="col-md-3 ">
                         <div class="icon-container fs-2 rounded-circle mx-auto text-white m-0 p-0">
                             <i class="fa-solid fa-face-grin-wink"></i>
                         </div>
                         <h5 class="fw-bold text-orange my-2">Happy Tour</h5>
-                        <small>Enjoy seamless and stress- transportation with our airport pickup service.</small>
+                        <small class="text-secondary">Enjoy seamless and stress- transportation with our airport pickup service.</small>
                     </section>
                 </div>
             </div>
@@ -106,8 +106,8 @@
             <section class="col-md-6 mt-3 mt-md-0">
                 <div>
                     <h5 class="text-orange  fs-2 fw-semibold d-none d-md-block">About Eva Bali Tour</h5>
-                    <p class="mb-3" style="letter-spacing: 1px">Experience the best of Bali with Great Bali Tours. From tranquil beaches to thrilling adventures, our expert team crafts personalized journeys that exceed expectations. Let us unlock the magic of Bali for you.</p>
-                    <p class="mb-3" style="letter-spacing: 1px">Immerse yourself in Bali's rich culture, where every temple tells a story and every dance embodies tradition. Our curated experiences offer unique insights into local customs, allowing you to connect deeply with the island's heritage. Whether it's participating in traditional ceremonies, learning Balinese cooking, or exploring vibrant markets, we invite you to discover the soul of Bali with us.</p>
+                    <p class="mb-3 text-secondary" style="letter-spacing: 1px">Experience the best of Bali with Great Bali Tours. From tranquil beaches to thrilling adventures, our expert team crafts personalized journeys that exceed expectations. Let us unlock the magic of Bali for you.</p>
+                    <p class="mb-3 text-secondary" style="letter-spacing: 1px">Immerse yourself in Bali's rich culture, where every temple tells a story and every dance embodies tradition. Our curated experiences offer unique insights into local customs, allowing you to connect deeply with the island's heritage. Whether it's participating in traditional ceremonies, learning Balinese cooking, or exploring vibrant markets, we invite you to discover the soul of Bali with us.</p>
                 </div>
 
             </section>
@@ -145,9 +145,9 @@
     {{-- destination end --}}
 
     {{-- package --}}
-    <div class="container packages position-relative">
+    <div class="container packages position-relative bg-white">
         <h1 class="text-center fw-semibold text-orange">Tour Packages</h1>
-        <p class="text-center"> Let us be your gateway to unforgettable adventures.</p>
+        <p class="text-center text-secondary"> Let us be your gateway to unforgettable adventures.</p>
         <div class="package swiper">
             <div class="swiper-wrapper">
                 @for ($i = 1;$i < 3;$i++)
@@ -156,6 +156,13 @@
                         <img src="{{asset('img/dest-'.$i.'.jpg')}}" class="card-img-top" alt="">
                         <div class="card-body d-flex flex-column justify-content-between">
                             <h4 class="fs-5 fw-semibold text-orange">Scooter Transport Tour</h4>
+                            <div>
+                                <ul class="text-secondary">
+                                    <li>Airport pickup</li>
+                                    <li>Photographer session</li>
+                                    <li>Ceremony purification group</li>
+                                </ul>
+                            </div>
                             <div>
                                 <p class="m-0" style="font-size: 12px">Start From</p>
                                 <div class="d-flex align-items-end justify-content-between">
@@ -172,8 +179,86 @@
         <div class="my-3 text-center">
             <a href="" class="btn btn-blue ">See More</a>
         </div>
-        <img src="{{asset('img/parallax-top.png')}}" class="w-100 parallax-top" alt="">
+
     </div>
     {{-- package end--}}
 
+    {{-- parallax  --}}
+    <div class="container-fluid px-0 bg-white parallax-container position-relative">
+        <img src="{{asset('img/parallax-top.png')}}" class="w-100 parallax-top container-fluid px-0 position-relative" alt="">
+        <img src="{{asset('img/parallax.png')}}" class="w-100 parallax h-100" alt="">
+        <img src="{{asset('img/parallax-bot.png')}}" class="w-100 parallax-bot" alt="">
+        <div class="content-container w-100 d-flex justify-content-center">
+            <div class="row content">
+                <div class="col-md-6 text-center text-md-start">
+                    <h1 class="fw-bold parallax-title">PLAN YOUR TRIP</h1>
+                    <p class="fw-light text-white fs-12" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum error rem voluptates et nostrum eos dolorem officia, voluptatibus cupiditate architecto harum dolores ea perferendis quisquam ad nam commodi at aut reiciendis voluptatem eum adipisci delectus tempore illum! A perferendis veritatis quae debitis aperiam dolor autem, nam, rerum illum beatae at et tenetur nostrum sint corporis? </p>
+                    <a href="" class="btn btn-orange">Book Now</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="overlay"></div>
+
+    </div>
+    {{-- parallax end --}}
+
+    {{-- gallery --}}
+    <div class="container-fluid gallery-container px-0 pb-2 py-2">
+        <h1 class="text-center text-orange fw-semibold my-4">Our Gallery</h1>
+        <div class="swiper gallery">
+            <div class="swiper-wrapper ">
+                @for($i = 1; $i < 10; $i++)
+                <div class="swiper-slide p-0 m-0">
+                    <img src="{{asset('img/dest-1.jpg')}}" class="w-100 h-100" alt="" style="object-fit: cover">
+                </div>
+                @endfor
+            </div>
+        </div>
+    </div>
+    {{-- gallery end --}}
+
+    {{-- article --}}
+    <div class="container articles py-3">
+        <h1 class=" text-center text-orange fw-semibold">Let's See What's New</h1>
+        <p class="text-center text-secondary">Let's see the newest article here</p>
+        <div class="swiper article">
+            <div class="swiper-wrapper">
+                @for($i = 0; $i < 10; $i++)
+                <div class="swiper-slide">
+                    <a href="" class="nav-link">
+                        <img src="{{asset('img/dest-1.jpg')}}" class="w-100 img-article" alt="">
+                        <div>
+                            <h2 class="fw-semibold fs-5">{{Str::limit('Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, consectetur.',50)}}</h2>
+                            <p>{{Str::limit('Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda deleniti fuga fugit similique eveniet expedita neque distinctio, quam in natus iure ut molestias!',50)}}</p>
+                        </div>
+                        <div class="text-end">
+                            <a href="" class="text-decoration-none text-orange">Read More</a>
+                        </div>
+                    </a>
+                </div>
+                @endfor
+            </div>
+        </div>
+    </div>
+    {{-- article end --}}
+
+    {{-- testi --}}
+    <div class="container testimoni-container my-4">
+        <h1 class="text-center fw-semibold text-orange">Our Happy Customer Reviews</h1>
+        <div class="swiper testimoni my-4">
+            <div class="swiper-wrapper">
+                @for($i = 0; $i < 10; $i++)
+                <div class="swiper-slide text-center bg-orange-light px-5 py-3">
+                    <img src="{{{asset('img/colon.png')}}}" class="my-3" alt="">
+                    <p class="text-start">" Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quis tenetur dolorem, unde obcaecati doloremque fuga, iusto possimus, nemo rem blanditiis magnam illum adipisci voluptatibus cupiditate numquam explicabo ratione voluptas? Sapiente blanditiis ex, delectus quod, alias unde beatae similique saepe, aperiam autem incidunt! Delectus nemo nulla at blanditiis debitis ex reprehenderit repellendus rem incidunt unde eaque "</p>
+                    <h5 class="fw-semibold mb-0">Sarah Nambayong</h5>
+                    <p class="text-secondary">Solo Traveler</p>
+                </div>
+                @endfor
+
+            </div>
+        </div>
+    </div>
+    {{-- testi end --}}
 @endsection
