@@ -41,6 +41,9 @@
 .bg-orange-light {
     background-color: #ffd9c6;
 }
+.bg-orange {
+    background-color: #ff7f3e;
+}
 .text-orange {
     color: #ff7f3e !important;
 }
@@ -274,7 +277,7 @@
 }
 @media screen and (min-width: 1024px) {
     .parallax {
-        margin-top: -18rem;
+        margin-top: -22rem;
     }
 }
 @media screen and (min-width: 1440px) {
