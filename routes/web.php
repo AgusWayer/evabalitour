@@ -8,3 +8,9 @@ Route::get('/', function () {
     ]);
 });
 
+Route::get('/about-us', function () {
+    return view('about',[
+        'title' => 'About Eva Bali Tours'
+    ]);
+});
+

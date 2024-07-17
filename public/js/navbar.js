@@ -3,9 +3,9 @@ $(document).ready(function () {
         const scroll = $(window).scrollTop();
         const navbarHeight = $(".navbar").outerHeight();
         if (scroll > navbarHeight) {
-            $(".navbar").addClass("active");
+            $(".navbar").addClass("open");
         } else {
-            $(".navbar").removeClass("active");
+            $(".navbar").removeClass("open");
         }
     });
 });
