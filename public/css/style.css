@@ -10,15 +10,20 @@
     background-color: transparent;
     transition: 0.3s;
 }
-.navbar a {
+.navbar a,
+.navbar .btn-toggle {
     color: white;
 }
 /* navbar */
-.navbar.active {
+.navbar.open {
     background-color: white;
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
 }
-.navbar.active a {
+.offcanvas-body {
+    z-index: 999 !important;
+}
+.navbar.open a,
+.navbar.open .btn-toggle {
     color: #414141;
 }
 /* navbar end */
@@ -40,6 +45,9 @@
 }
 .bg-orange-light {
     background-color: #ffd9c6;
+}
+.bg-orange {
+    background-color: #ff7f3e;
 }
 .text-orange {
     color: #ff7f3e !important;
@@ -211,6 +219,15 @@
     object-fit: cover;
 }
 /* article end */
+
+/* about us page */
+.number-container {
+    width: 50px;
+    height: 50px;
+    background-color: #ff7f3e;
+}
+
+/* aboutt us page end */
 @media screen and (min-width: 768px) {
     .offcanvas-body {
         width: 100%;
