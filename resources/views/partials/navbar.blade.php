@@ -20,8 +20,11 @@
                     <li class="nav-item">
                         <a href="/destinations" class="nav-link {{Request::is('destinations*') ? 'text-orange' : ''}}">Destinations</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="/articles" class="nav-link {{Request::is('articles*') ? 'text-orange' : ''}}">Articles</a>
+                    </li>
                 </ul>
-                <a href="" class="btn btn-orange fw-semibold">Book Now</a>
+                <a href="/#floatinginput" class="btn btn-orange fw-semibold">Book Now</a>
             </div>
         </div>
     </div>

@@ -5,11 +5,12 @@
     <div class="container content text-center text-md-start vh-100 text-white">
         {{-- img overlay  --}}
         <img src="{{asset('img/about-hero.jpg')}}" class="image-bg w-100 h-100" alt="">
+        <div class="overlay"></div>
         {{-- img overlay end --}}
         <div class="row h-100 d-flex flex-column justify-content-center">
             <section class="col-md-6 ">
                 <h1 class="header-hero">GET CLOSER TO US</h1>
-                <p class="" style="letter-spacing: 2px">Experience the magic of Bali with Eva Bali Tours. Explore stunning landscapes, immerse in rich culture, and create memories that last a lifetime.</p>
+                <p class="" style="letter-spacing: 2px">Welcome to Eva Bali Tours! We are dedicated to providing you with the best experiences on the beautiful island of Bali. Our expert Female Tour Guide and driver ensure a safe, enjoyable, and informative journey. Learn about our story, our values, and our commitment to making your Bali trip unforgettable</p>
 
             </section>
         </div>
@@ -23,7 +24,12 @@
         </section>
         <section class="col-md-6 px-2">
             <h3 class="fs-1 fw-semibold">About Us</h3>
-            <p style="letter-spacing: 2px" class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum vel quasi veniam ex, dignissimos reiciendis neque tenetur amet nemo nesciunt deserunt fugit, eum fugiat voluptas nostrum? Animi molestiae dolorum asperiores qui iusto! Nam non accusamus sint! Eos voluptatibus odio dolore! Cum perspiciatis illum ad minus quae corporis illo repudiandae id, accusantium, dolor esse laudantium iure! Aliquid perspiciatis dicta ducimus inventore ea, sit dolor reiciendis, totam commodi eius eaque assumenda delectus ipsum eos doloribus accusamus repudiandae rerum, veritatis qui illo optio? Nam laboriosam rem sed voluptatem magni hic enim iure, ratione cum quibusdam cumque corporis? Iure veritatis magni numquam minus at.</p>
+            <p style="letter-spacing: 2px" class="text-secondary">Experience Bali in a whole new way with Eva, your friendly and experienced guide. Explore the island’s stunning natural beauty, from lush rice fields to amazing waterfalls. With Eva’s expert knowledge, you’ll find hidden gems, learn about local culture, and enjoy exciting adventures.
+            </p>
+            <p style="letter-spacing: 2px" class="text-secondary">Eva’s tours offer the perfect mix of relaxation and fun. Whether you’re visiting ancient temples, tasting traditional Balinese food, or discovering less-known spots, Eva will make sure you have a memorable experience.
+            </p>
+            <p style="letter-spacing: 2px" class="text-secondary">Join Eva to see Bali’s most beautiful places and let her guide you on an adventure full of culture, nature, and excitement. Book your tour today and let Eva show you the true essence of Bali!
+            </p>
         </section>
     </div>
 </div>
@@ -40,8 +46,8 @@
                         </span>
                     </div>
                     <div class="col-10 ps-5">
-                        <h3 class="fw-semibold">Lorem Ipsum Dikir</h3>
-                        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit..</p>
+                        <h3 class="fw-semibold text-orange">Personalized Tours</h3>
+                        <p class="text-secondary">We customize our tours to fit your interests, ensuring you have a unique and memorable experience in Bali.</p>
                     </div>
                 </div>
                 <div class="row align-items-starts">
@@ -51,8 +57,8 @@
                         </span>
                     </div>
                     <div class="col-10 ps-5">
-                        <h3 class="fw-semibold">Lorem Ipsum Dikir</h3>
-                        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit..</p>
+                        <h3 class="fw-semibold text-orange">Expert Guidance</h3>
+                        <p class="text-secondary">With Eva’s local knowledge, you’ll discover Bali’s best spots and get a true taste of the island’s beauty and culture.</p>
                     </div>
                 </div>
                 <div class="row align-items-starts">
@@ -62,8 +68,20 @@
                         </span>
                     </div>
                     <div class="col-10 ps-5">
-                        <h3 class="fw-semibold">Lorem Ipsum Dikir</h3>
-                        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit..</p>
+                        <h3 class="fw-semibold text-orange">Comfort and Safety</h3>
+                        <p class="text-secondary">Your comfort and safety are our top priorities. We make sure you have a smooth and enjoyable experience from start to finish.
+                        </p>
+                    </div>
+                </div>
+                <div class="row align-items-starts">
+                    <div class="col-1">
+                        <span class="number-container d-flex justify-content-center align-items-center text-white   rounded-circle m-0 p-0 text-center">
+                            <h1 class="fs-3 m-0 p-0">4</h1>
+                        </span>
+                    </div>
+                    <div class="col-10 ps-5">
+                        <h3 class="fw-semibold text-orange">Great for Solo Female Travelers</h3>
+                        <p class="text-secondary">Traveling alone? Our tours are perfect for solo female travelers looking for a safe and welcoming experience. Eva provides personal attention and ensures a supportive environment, so you can explore Bali with confidence</p>
                     </div>
                 </div>
             </div>
@@ -77,26 +95,28 @@
     <img src="{{asset('img/overlay-barong.png')}}" class=" overlay-barong" alt="">
     <img src="{{asset('img/overlay-barong.png')}}" class=" overlay-barong barong-2 d-none d-md-block" alt="">
     <div class="container destination text-white text-center text-md-start">
-        <h1 class="fs-3 text-center text-orange fw-semibold">Reccomended Itinerary for You!</h1>
+        <h1 class="fs-1 my-3 text-center text-orange fw-semibold">Reccomended Itinerary for You!</h1>
         {{-- destination --}}
             <div class="swiper destinations rounded-3">
                 <div class="swiper-wrapper">
-                    @for ($i = 1; $i < 3; $i++)
+                    @foreach ($destinations as $dst)
                     <section class="swiper-slide">
                         <div class="position-relative d-flex justify-content-center h-100">
-                            <img src="{{asset('img/dest-'.$i.'.jpg')}}" class="w-100 h-100" alt="">
+                            <img src="{{asset('storage/'.$dst->library->image)}}" class="w-100 h-100" alt="">
                             <section class="content position-absolute d-flex justify-content-center flex-column">
-                                <h5 class="fs-1 fw-semibold">Uluwatu</h5>
-                                <h5 class="fw-semibold">Balinese Performing Arts</h5>
-                                <p>Uluwatu Temple  is  well known as a name of Hinduism temple which is located on southern part of Bali. Ulu Meaning land’s and watu meaning rock.  This name truly presents this temple as it is found at Bali’s.</p>
+                                <h5 class="fs-1 fw-semibold">{{$dst->title}}</h5>
+                                <h5 class="fw-semibold">{{$dst->category}}</h5>
                                 <div>
-                                    <a href="" class="btn  btn-orange">See More</a>
+                                    {!! $dst->content !!}
+                                </div>
+                                <div>
+                                    <a href="/destinations/{{$dst->title}}" class="btn btn-orange">See More</a>
                                 </div>
                             </section>
                             <div class="overlay"></div>
                         </div>
                     </section>
-                    @endfor
+                    @endforeach
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
@@ -108,9 +128,9 @@
     <svg xmlns="http://www.w3.org/2000/svg" class="wave-about wave-1" style="height: fit-content" viewBox="0 0 1440 320"><path fill="#f7f7f7" fill-opacity="1" d="M0,160L48,186.7C96,213,192,267,288,261.3C384,256,480,192,576,165.3C672,139,768,149,864,165.3C960,181,1056,203,1152,202.7C1248,203,1344,181,1392,170.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
     <div class="content flex-column">
         <div class="w-md-50 mx-auto text-center">
-            <h1 class="fw-bold">EXPERIENCE THE BEAUTY OF BALI</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, unde. Ipsa, beatae tempora officiis culpa autem cumque! Nostrum, esse porro!</p>
-            <a href="" class="btn btn-orange">Contact Us</a>
+            <h1 class="fw-bold">Discover Bali’s Wonders with Eva Bali Tours</h1>
+            <p>Explore Bali’s stunning landscapes, rich culture, and thrilling adventures with Eva Bali Tours. Whether you’re admiring breathtaking waterfalls, immersing yourself in vibrant traditions, or seeking exciting activities, we offer unforgettable experiences tailored just for you.</p>
+            <a href="/#floatinginput" class="btn btn-orange">Book Now</a>
         </div>
 
     </div>

@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-6">
                 <h3 class="fw-semibold">Eva Bali Tours</h3>
-                <p>Discover excellence with Eva Bali Tours. From personalized itineraries to expert guidance, we ensure your Bali experience surpasses expectations.</p>
+                <p>Experience Bali in a whole new way with Eva, your friendly and experienced guide. Explore the island’s stunning natural beauty, from lush rice fields to amazing waterfalls. With Eva’s expert knowledge, you’ll find hidden gems, learn about local culture, and enjoy exciting adventures.</p>
             </div>
             <div class="col-md-6">
                 <h3 class="fw-semibold">Navigation</h3>
